@@ -5,8 +5,8 @@ pub const ProcessMaps = struct {
     allocator: std.mem.Allocator,
     maps: std.fs.File,
 
-    const InitError = std.fmt.BufPrintError || std.fs.File.OpenError;
-    const ParseError = error{ StreamTooLong, EndOfStream } || std.posix.ReadError || std.mem.Allocator.Error || std.fmt.ParseIntError;
+    pub const InitError = std.fmt.BufPrintError || std.fs.File.OpenError;
+    pub const ParseError = error{ StreamTooLong, EndOfStream } || std.posix.ReadError || std.mem.Allocator.Error || std.fmt.ParseIntError;
 
     /// Initialize an iterator for mappings of a process.
     /// If `pid` is null, /proc/self/maps is read.
