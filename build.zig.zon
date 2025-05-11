@@ -1,7 +1,8 @@
 .{
-    .name = "pmparse",
+    .name = .pmparse,
     .version = "1.0.0",
     .dependencies = .{},
+    .fingerprint = 0xd19960a41b8f8972,
     .paths = .{
         "build.zig",
         "build.zig.zon",
