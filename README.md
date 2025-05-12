@@ -1,3 +1,7 @@
+# Deprecated
+
+Use the procmap_query ioctl() interface introduced in Linux 6.11 instead.
+
 # pmparse
 
 A small library to parse the memory mappings of a process on Linux.
